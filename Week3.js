@@ -107,6 +107,14 @@ console.log(lengthSum);
 */
 let word = "Alright";
 let n = 3;
+console.log("Phrase by Matthew McConaughey");
+function wordRepeat(){
+for(let i = 0; i < word.repeat; i++){
+    wordRepeat = word.repeat, [3]
+}
+}
+//call function
+wordRepeat(word, n);
 
 console.log (`${word.repeat(3)}`);
 
@@ -141,20 +149,110 @@ let myArray = [5, 9, 14, 30, 6];
 addingNumbers(myArray);
 
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
-/*
 
+let avg = myNum => {
+    let sum = myNum.reduce((a, b) => a + b);
+    let average = sum/myNum.length;
+    return average;
+  }
+  
+  console.log(avg([18, 21, 23, 28, 44, 45]));
+  
 
+  let myNumbers = [18, 21, 23, 28, 44, 45];
+  let newArray = [1,2,3,4]
+
+function calcAverage(array){ //inside paranthesis is a parameter
+    let total = 0; //always need a starting number
+    let average;
+    
+    //body of the function - logic - calculate average
+    // we know we need to itterate our array to calc average
+    for(let i =0; i < array.length; i++) {
+        total = total + array[i] //we are adding every number of the array
+        //0 = 0 +18
+        //18 = 18 + 21
+        //etc until the final output
+        console.log(array.length)
+        average = total / array.length
+    }
+    console.log(total)
+    console.log(average)
+}
+
+//call function 
+calcAverage(myNumbers); //inside paranthises is called the "argument to the function"
 
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
+let myNumbers2 = [18, 21, 23, 28, 44, 45];
+  let newArray2 = [1,2,3,4]
 
-12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+function calcAverage2(array, array2){ //inside paranthesis is a parameter
+    let total2 = 0; //always need a starting number
+    let average2;
+    console.log("This is my function of averaging two arrays of numbers then finding which array is higher")
+    //body of the function - logic - calculate average
+    // we know we need to itterate our array to calc average
+    for(let i =0; i < array2.length; i++) {
+        total2 = total2 + array2[i] //we are adding every number of the array
+        //0 = 0 +18
+        //18 = 18 + 21
+        //etc until the final output
+        console.log(array2.length)
+        average2 = total2 / array2.length
+    }
+    let total = 0; //always need a starting number
+    let average;
+    //body of the function - logic - calculate average
+    // we know we need to itterate our array to calc average
+    for(let i =0; i < array.length; i++) {
+        total = total + array[i] //we are adding every number of the array
+        //0 = 0 +18
+        //18 = 18 + 21
+        //etc until the final output
+        console.log(array.length)
+        average = total / array.length
+}
+console.log(average, average2);
+if(array > array2){
+    console.log ("Array is larger than Array2")
+}
+else if(array < array2){
+    console.log("Array2 is larger than Array")
+}
+}
+//call function 
+calcAverage2(myNumbers, newArray); //inside paranthises is called the "argument to the function"
 
 
-13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+//12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+//write a function
+let temp = 98;
+let moneyInPocket = 15;
+console.log("This is my function willBuyDrink if its hot and I have enough money");
+function willBuyDrink() {
+    
+}
+//create a boolean isHotOutside and a number moneyInPocket
+if((temp > 100) && (moneyInPocket > 10.50)){
+    console.log("true")
+}
+else if ((temp < 100) || (moneyInPocket < 10.50)){ 
+    console.log("It is not hot enough to buy a drink")
+}
+//return true if it is hot outside AND if moneyInPocket is greater than 10.50
+
+//call function
+willBuyDrink(temp, moneyInPocket);
 
 
-Screenshots of Code:
+//13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
-Screenshots of Running Application:
-*/
+function myDogsNames(a,b){
+    console.log("I needed an easier function after this coding Assignment");
+
+return a + ' '+ b;
+}
+console.log(myDogsNames('Marley',"and"+" " + 'Mina'));
