@@ -258,3 +258,5 @@ return a + ' '+ b;
 console.log(myDogsNames('Marley',"and"+" " + 'Mina'));
 
 //saving more information to upload to my repo.
+
+//I turned in my assignment not realizing there were 2 videos needed, the intro and for the coding with the explanation of what I did here. I turned in the intro of me but, I honestly can't explain what is going on with the coding since it is all still so confusing and why something works in one spot and not in another, so I will just take the loss of points. :( 
